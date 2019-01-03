@@ -72,7 +72,7 @@
 			});
 			
 			grid.data('kendoGrid').setDataSource(ds);
-			//dataSource.sync();
+			
 		};
 		  
 		function generateColumns(response){

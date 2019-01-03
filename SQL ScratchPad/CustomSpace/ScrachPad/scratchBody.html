@@ -1,0 +1,37 @@
+
+	<style>
+		.drop {
+			padding: 20px 40% 35px
+		}
+		.pad {
+			padding-right: 40%;
+			padding-bottom: 30px;
+		}
+		.right {
+			position: absolute;
+			right: 41%;
+			padding-top: 10px;
+			
+		}
+	</style>
+	<div id='scratchHeader'>
+		<h1>SQL Scratchpad</h1>
+		<hr>
+	</div>
+	<div class='drop' >
+		Database: <select id='dbDropdown'>
+			<option>ServiceManagement</option>
+			<option>ServiceManager</option>
+		</select>
+	</div>	
+	<div class='pad'>
+		SELECT 
+		<Input id='qFields' type='text'></input><br>
+		FROM 
+		<Input id='tableName' type='text'></input><br>
+		Additional Clauses(Joins, Where, etc) 
+		<Input id='whereClause' type='text'></input>
+		<div class='right'>
+			<button  id='btnGo'>Go</button>
+		</div>
+	</div>
